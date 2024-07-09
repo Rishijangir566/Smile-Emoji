@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0%;
+}
+.box {
+   /* margin: 11rem auto; */
+    height: 500px;
+    width: 23%;
+ 
+}
+
+
+.circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    background-color: yellow;
+    margin: 2rem 3rem;
+    position: relative;
+    animation: mymove 3s infinite  ;
+    animation-direction: alternate;
+}
+@keyframes mymove {
+     from {
+        top: 0px;
+        left: 0%;
+     }
+    to{
+         transform: rotate(360deg);
+         top: 0px;
+         left: 1000px;
+    }
+}
+.eyes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height:10rem;
+    border-radius: 50%;
+}
+.left{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 4rem;
+    width: 2.5rem;
+    box-shadow: 2px 3px 4px;
+    margin:3rem 0rem;
+}
+.right{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 4rem;
+    width: 2.5rem;
+    margin: 3rem 0rem;
+    box-shadow: 2px 3px 4px;
+
+}
+.left p{
+    background-color: black;
+    height:2.4rem;
+    width: 1.5rem;
+    border-radius:50%;
+    position: relative;
+    top: 23px;
+    left: 10px;
+}
+.right p{
+    background-color: black;
+    height:2.4rem;
+    width: 1.5rem;
+    border-radius:50%;
+    position: relative;
+    top: 23px;
+    left: 10px;
+}
+.mouth{
+    border: 3px solid black;
+    box-sizing: calc(23deg);
+    height: 2rem;
+    border-bottom-left-radius:9rem;
+    border-bottom-right-radius:9rem;
+    width: 7rem; 
+    position: relative;
+    left: 3.6rem;
+    background-color: rgb(222, 222, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toungh{
+    height: 3rem;
+    width: 2rem;
+    background-color: brown;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-top: 3rem ;
+}
+
+ .circle:hover{
+    transform: rotate(360deg);
+    transition: 1s linear ;
+    background-color: yellowgreen;
+ }
+ 
